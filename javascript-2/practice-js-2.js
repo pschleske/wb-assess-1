@@ -98,7 +98,7 @@ const commit = {
 //CODE HERE
 const addRemote = {
     description: "Let's you sync a remote repo to your own",
-    code: "git remote add my_awesome_new_remote_repo git@git.assembla.com:portfolio/space.space_name.git"
+    code: "git remote add origin"
 }
 
 //////////////////PROBLEM 9////////////////////
