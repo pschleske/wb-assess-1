@@ -95,8 +95,7 @@ colorCopy.push('yellow')
 const numbers = [1, 2, 3, 4, 5];
 
 //CODE HERE
-// const middleNums = []
-// middleNums.push
+let middleNums = numbers.slice(1, 4)
 
 //////////////////PROBLEM 11////////////////////
 /*
@@ -117,7 +116,7 @@ const me = {
   firstName: "Priscila",
   state: "Utah",
   age: 34,
-  greeter: greet("Hello, My name is Priscila and I live in Utah")
+  greeter: (greet) => { `Hello! My name is ${firstName} and I live in ${state}` }
 }
 
 //////////////////PROBLEM 12////////////////////
@@ -135,12 +134,12 @@ const me = {
 
 // CODE HERE
 function bigOrSmall(arr) {
-  let answers = []
-  if (i = 0; i > 100; i++) {
-    answers.push('big')
-  }
-  answers.push('small')
-  return answers
+  //   let answers = []
+  //   if (i = 0; i > 100; i++) {
+  //     answers.push('big')
+  //   }
+  //   answers.push('small')
+  //   return answers
 }
 
 //////////////////PROBLEM 13////////////////////
@@ -186,10 +185,10 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['global', 'inner', 'outer', 'functional'];
+let globalScope = ['global'];
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ['global', 'inner', 'outer'];
+let firstFunctionScope = ['global', 'outer'];
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
 let innerFunctionScope = ['global', 'inner', 'outer'];
@@ -232,11 +231,11 @@ function isItBob(obj, cb) {
 */
 
 //CODE HERE
-function giveMeDoubles(arr, cb) {
-  for (i = 0; i > arr.length; i * 2) {
-    cb(arr[i])
-  }
-}
+// function giveMeDoubles(arr, cb) {
+//   for (i = 0; i > arr.length; i * 2) {
+//     cb(arr[i])
+//   }
+// }
 
 //////////////////PROBLEM 18////////////////////
 /*
@@ -264,11 +263,11 @@ function giveMeDoubles(arr, cb) {
 */
 
 //CODE HERE
-function carFactory(make, model, year) {
-  if (obj.year > 2018) {
-    obj.isNew = true
-  } else {
-    obj.isNew = false
-  }
-  return obj(toyota, 4runner, 2020)
-}
+// function carFactory(make, model, year) {
+//   if (obj.year > 2018) {
+//     obj.isNew = true
+//   } else {
+//     obj.isNew = false
+//   }
+//   return obj(toyota, 4runner, 2020)
+// }
