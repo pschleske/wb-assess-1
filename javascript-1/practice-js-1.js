@@ -231,12 +231,13 @@ function isItBob(obj, cb) {
 */
 
 //CODE HERE
-// function giveMeDoubles(arr, cb) {
-//   for (i = 0; i > arr.length; i * 2) {
-//     cb(arr[i])
-//   }
-// }
-
+function giveMeDoubles(arr, cb) {
+  for (let i = 0; i < arr.length; i++) {
+    // arr[i] = arr[i] * 2 , below is shorter more concise 
+    arr[i] *= 2
+  }
+  cb(arr)
+}
 //////////////////PROBLEM 18////////////////////
 /*
   Write a function called carFactory that takes in three parameters: a make, model, and year.
@@ -263,11 +264,14 @@ function isItBob(obj, cb) {
 */
 
 //CODE HERE
-// function carFactory(make, model, year) {
-//   if (obj.year > 2018) {
-//     obj.isNew = true
-//   } else {
-//     obj.isNew = false
-//   }
-//   return obj(toyota, 4runner, 2020)
-// }
+function carFactory(make, model, year) {
+  const obj = {
+    make, model, year //: year > 2018 ? true : false//
+  }
+  if (obj.year > 2018) {
+    obj.isNew = true
+  } else {
+    obj.isNew = false
+  }
+  return obj
+}
